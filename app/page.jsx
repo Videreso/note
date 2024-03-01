@@ -33,9 +33,9 @@ export default function Page() {
                 <Image className="logo" src="/logo.png" alt="Logo" w="52" h="auto"/>
                 <Group gap="2rem" visibleFrom="sm">
                     <Text fw={700} size="1.1rem" component={Link} href="/#about">About us</Text>
-                    <Text fw={700} size="1.1rem" component={Link} href="/#aritsts">Artists</Text>
+                    <Text fw={700} size="1.1rem" component={Link} href="/#artists">Artists</Text>
                     <Text fw={700} size="1.1rem" component={Link} href="/#label">Label</Text>
-                    <Text fw={700} size="1.1rem" component={Link} href="/#release">Releases</Text>
+                    <Text fw={700} size="1.1rem" component={Link} href="/#releases">Releases</Text>
                     <Text fw={700} size="1.1rem" component={Link} href="/#apply">Apply</Text>
                 </Group>
                 <div/>
@@ -52,9 +52,9 @@ export default function Page() {
                 >
                     <Stack>
                         <Text fw={700} size="1.1rem" component={Link} href="/#about">About us</Text>
-                        <Text fw={700} size="1.1rem" component={Link} href="/#aritsts">Artists</Text>
+                        <Text fw={700} size="1.1rem" component={Link} href="/#artists">Artists</Text>
                         <Text fw={700} size="1.1rem" component={Link} href="/#label">Label</Text>
-                        <Text fw={700} size="1.1rem" component={Link} href="/#release">Releases</Text>
+                        <Text fw={700} size="1.1rem" component={Link} href="/#releases">Releases</Text>
                         <Text fw={700} size="1.1rem" component={Link} href="/#apply">Apply</Text>
                     </Stack>
                 </Drawer>
@@ -69,7 +69,7 @@ export default function Page() {
                 Amet blanditiis culpa nam quasi quo repellendus vero.</Text>
         </Stack>
 
-        <Container size={1200} mb="8rem">
+        <Container id="about" size={1200} mb="8rem">
             <Title mb="0.8rem" ta="center" order={2} fz="3rem">Supporting artists for over 5 years</Title>
             <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
                 adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia
@@ -110,7 +110,7 @@ export default function Page() {
             </SimpleGrid>
         </Container>
 
-        <Container size={1200} mb="8rem">
+        <Container id="artists" size={1200} mb="8rem">
             <Title mb="0.8rem" ta="center" order={2} fz="3rem">Meet our talent</Title>
             <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
                 adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia
@@ -129,7 +129,7 @@ export default function Page() {
             </SimpleGrid>
         </Container>
 
-        <Container size={1200} mb="8rem">
+        <Container id="label" size={1200} mb="8rem">
             <Title mb="0.8rem" ta="center" order={2} fz="3rem">About us</Title>
             <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
                 adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia
@@ -154,7 +154,7 @@ export default function Page() {
             </Stepper>
         </Container>
 
-        <Container size={1800} mb="8rem">
+        <Container id="releases" size={1800} mb="8rem">
             <Title mb="0.8rem" ta="center" order={2} fz="3rem">Our releases</Title>
             <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
                 adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia
@@ -176,7 +176,7 @@ export default function Page() {
             </SimpleGrid>
         </Container>
 
-        <Container mb="10rem">
+        <Container id="apply" mb="10rem">
             <ApplyForm />
         </Container>
     </>
