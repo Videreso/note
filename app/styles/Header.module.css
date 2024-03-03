@@ -1,10 +1,8 @@
 .header {
-    height: rem(56px);
     margin-bottom: rem(120px);
 }
 
 .inner {
-    height: rem(56px);
     display: flex;
     justify-content: space-between;
     align-items: center;

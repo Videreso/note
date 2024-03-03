@@ -19,26 +19,37 @@ import {
 import {useDisclosure} from "@mantine/hooks";
 import Link from "next/link";
 import classes from './styles/Header.module.css';
-import {PiClockBold, PiMusicNotesFill, PiTimerLight, PiUserCircleBold} from "react-icons/pi";
+import {PiUserCircleBold} from "react-icons/pi";
 import {ArtistCard} from "./components/ArtistCard/ArtistCard";
 import {useState} from "react";
 import {ReleasesCard} from "./components/ReleasesCard/ReleasesCard";
 import {ApplyForm} from "./components/Form/ApplyForm";
+import {Carousel} from "@mantine/carousel";
 
 export default function Page() {
     const [opened, {toggle}] = useDisclosure(false);
     const [active, setActive] = useState(1);
 
     return <>
-        <Box pt="1rem" className={classes.header}>
-            <Container size={1200} className={classes.inner}>
-                <Image className="logo" src="/logo.png" alt="Logo" w="52" h="auto"/>
+        <Box bg="indigo.9" className={classes.header}>
+            <Container py="0.8rem" size={1200} className={classes.inner}>
+                <Image className="logo" src="/logo.png" alt="Logo" w="42" h="auto"/>
                 <Group gap="2rem" visibleFrom="sm">
-                    <Text fw={700} size="1.1rem" component={Link} href="/#about">About us</Text>
-                    <Text fw={700} size="1.1rem" component={Link} href="/#artists">Artists</Text>
-                    <Text fw={700} size="1.1rem" component={Link} href="/#label">Label</Text>
-                    <Text fw={700} size="1.1rem" component={Link} href="/#releases">Releases</Text>
-                    <Text fw={700} size="1.1rem" component={Link} href="/#apply">Apply</Text>
+                    <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
+                        <Text c="bright" fw={700} component={Link} href="/#about">About us</Text>
+                    </Paper>
+                    <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
+                        <Text c="bright" fw={700} component={Link} href="/#artists">Artists</Text>
+                    </Paper>
+                    <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
+                        <Text c="bright" fw={700} component={Link} href="/#label">Label</Text>
+                    </Paper>
+                    <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
+                        <Text c="bright" fw={700} component={Link} href="/#releases">Releases</Text>
+                    </Paper>
+                    <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
+                        <Text c="bright" fw={700} component={Link} href="/#apply">Apply</Text>
+                    </Paper>
                 </Group>
                 <div/>
 
@@ -65,20 +76,21 @@ export default function Page() {
         <Container size={1400}>
             <Grid my="10rem">
                 <Grid.Col span={{base: 12, md: 6}}>
-                    <Stack gap="0.2rem">
-                        <Image className="logo" src="/logo.png" alt="Logo" w="72" h="auto"/>
-                        <Title mb="1rem" lh={1} fw={700} size="4rem" maw="40rem">Elegent sounds, the
+                    <Stack py="3rem" gap="0.2rem">
+                        <Title c="bright" mb="1rem" lh={1} fw={700} size="4rem" maw="40rem">Elegent sounds, the
                             best
                             artists</Title>
                         <Text c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Commodi
-                            consectetur illum ipsam nobis possimus ratione sapiente! Cupiditate in perspiciatis quis saepe
+                            consectetur illum ipsam nobis possimus ratione sapiente! Cupiditate in perspiciatis quis
+                            saepe
                             sunt!
                             Amet blanditiis culpa nam quasi quo repellendus vero.</Text>
                     </Stack>
                 </Grid.Col>
                 <Grid.Col pos="relative" span={{base: 12, md: 6}}>
-                    <Paper right="5rem" top={0} pos="absolute" className="stat_box" radius="50px" bg="rgba(255, 255, 255, 0.5)" w="fit-content" shadow="lg" p="2rem">
+                    <Paper right="5rem" top={0} pos="absolute" className="stat_box" radius="50px"
+                           bg="rgba(255, 255, 255, 0.5)" w="fit-content" shadow="lg" p="2rem">
                         <Group>
                             <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
                                 <PiUserCircleBold size="1.8rem"/>
@@ -87,7 +99,8 @@ export default function Page() {
                             <Text c="dark.5">Total artists</Text>
                         </Group>
                     </Paper>
-                    <Paper top="10rem" left="2rem" pos="absolute" className="stat_box" radius="50px" bg="rgba(255, 255, 255, 0.5)" w="fit-content" shadow="lg" p="2rem">
+                    <Paper top="10rem" left="2rem" pos="absolute" className="stat_box" radius="50px"
+                           bg="rgba(255, 255, 255, 0.5)" w="fit-content" shadow="lg" p="2rem">
                         <Group>
                             <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
                                 <PiUserCircleBold size="1.8rem"/>
@@ -96,7 +109,8 @@ export default function Page() {
                             <Text c="dark.5">Total minutes</Text>
                         </Group>
                     </Paper>
-                    <Paper bottom="-2rem" right="2rem" pos="absolute" className="stat_box" radius="50px" bg="rgba(255, 255, 255, 0.5)" w="fit-content" shadow="lg" p="2rem">
+                    <Paper bottom="-2rem" right="2rem" pos="absolute" className="stat_box" radius="50px"
+                           bg="rgba(255, 255, 255, 0.5)" w="fit-content" shadow="lg" p="2rem">
                         <Group>
                             <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
                                 <PiUserCircleBold size="1.8rem"/>
@@ -109,61 +123,59 @@ export default function Page() {
             </Grid>
         </Container>
 
-        <Container id="about" size={1200} mb="8rem">
-            <Title mb="0.8rem" ta="center" order={2} fz="3rem">Supporting artists for over 5 years</Title>
-            <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia
-                rerum tempore voluptatibus.</Text>
-            <SimpleGrid
-                cols={{base: 1, sm: 2, lg: 4}}
-                spacing={{base: 10, sm: 'xl'}}
-                verticalSpacing={{base: 'md', sm: 'xl'}}
-            >
-                <Paper shadow="lg" p="3rem" style={{borderTop: "20px solid #2A7FFE"}}>
-                    <ActionIcon mb="1rem" size="xl" bg="rgb(35,139,230, 0.5)">
-                        <PiUserCircleBold size="1.8rem"/>
-                    </ActionIcon>
-                    <Text mb="1rem" c="dimmed">Total artists</Text>
-                    <Text fw={700} size="2rem">4</Text>
-                </Paper>
-                <Paper shadow="lg" p="3rem" style={{borderTop: "20px solid #2A7FFE"}}>
-                    <ActionIcon mb="1rem" size="xl" bg="rgb(35,139,230, 0.5)">
-                        <PiClockBold size="1.8rem"/>
-                    </ActionIcon>
-                    <Text mb="1rem" c="dimmed">Total minutes listened</Text>
-                    <Text fw={700} size="2rem">5,313,439</Text>
-                </Paper>
-                <Paper shadow="lg" p="3rem" style={{borderTop: "20px solid #2A7FFE"}}>
-                    <ActionIcon mb="1rem" size="xl" bg="rgb(35,139,230, 0.5)">
-                        <PiMusicNotesFill size="1.8rem"/>
-                    </ActionIcon>
-                    <Text mb="1rem" c="dimmed">Total songs</Text>
-                    <Text fw={700} size="2rem">93</Text>
-                </Paper>
-            </SimpleGrid>
-        </Container>
+        {/*<Container id="about" size={1200} mb="8rem">*/}
+        {/*    <Title mb="0.8rem" ta="center" order={2} fz="3rem">Supporting artists for over 5 years</Title>*/}
+        {/*    <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur*/}
+        {/*        adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia*/}
+        {/*        rerum tempore voluptatibus.</Text>*/}
+        {/*    <SimpleGrid*/}
+        {/*        cols={{base: 1, sm: 2, lg: 4}}*/}
+        {/*        spacing={{base: 10, sm: 'xl'}}*/}
+        {/*        verticalSpacing={{base: 'md', sm: 'xl'}}*/}
+        {/*    >*/}
+        {/*        <Paper shadow="lg" p="3rem" style={{borderTop: "20px solid #2A7FFE"}}>*/}
+        {/*            <ActionIcon mb="1rem" size="xl" bg="rgb(35,139,230, 0.5)">*/}
+        {/*                <PiUserCircleBold size="1.8rem"/>*/}
+        {/*            </ActionIcon>*/}
+        {/*            <Text mb="1rem" c="dimmed">Total artists</Text>*/}
+        {/*            <Text fw={700} size="2rem">4</Text>*/}
+        {/*        </Paper>*/}
+        {/*        <Paper shadow="lg" p="3rem" style={{borderTop: "20px solid #2A7FFE"}}>*/}
+        {/*            <ActionIcon mb="1rem" size="xl" bg="rgb(35,139,230, 0.5)">*/}
+        {/*                <PiClockBold size="1.8rem"/>*/}
+        {/*            </ActionIcon>*/}
+        {/*            <Text mb="1rem" c="dimmed">Total minutes listened</Text>*/}
+        {/*            <Text fw={700} size="2rem">5,313,439</Text>*/}
+        {/*        </Paper>*/}
+        {/*        <Paper shadow="lg" p="3rem" style={{borderTop: "20px solid #2A7FFE"}}>*/}
+        {/*            <ActionIcon mb="1rem" size="xl" bg="rgb(35,139,230, 0.5)">*/}
+        {/*                <PiMusicNotesFill size="1.8rem"/>*/}
+        {/*            </ActionIcon>*/}
+        {/*            <Text mb="1rem" c="dimmed">Total songs</Text>*/}
+        {/*            <Text fw={700} size="2rem">93</Text>*/}
+        {/*        </Paper>*/}
+        {/*    </SimpleGrid>*/}
+        {/*</Container>*/}
 
         <Container id="artists" size={1200} mb="8rem">
-            <Title mb="0.8rem" ta="center" order={2} fz="3rem">Meet our talent</Title>
+            <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">Meet our talent</Title>
             <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
                 adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia
                 rerum tempore voluptatibus.</Text>
-            <SimpleGrid
-                cols={{base: 1, sm: 2, lg: 3}}
-                spacing={{base: 10, sm: 'xl'}}
-                verticalSpacing={{base: 'md', sm: 'xl'}}
-            >
-                <ArtistCard/>
-                <ArtistCard/>
-                <ArtistCard/>
-                <ArtistCard/>
-                <ArtistCard/>
-                <ArtistCard/>
-            </SimpleGrid>
+            <Container size="20rem">
+                <Carousel w="auto" withIndicators height={500}>
+                    <Carousel.Slide><ArtistCard/></Carousel.Slide>
+                    <Carousel.Slide><ArtistCard/></Carousel.Slide>
+                    <Carousel.Slide><ArtistCard/></Carousel.Slide>
+                    <Carousel.Slide><ArtistCard/></Carousel.Slide>
+                    <Carousel.Slide><ArtistCard/></Carousel.Slide>
+                    <Carousel.Slide><ArtistCard/></Carousel.Slide>
+                </Carousel>
+            </Container>
         </Container>
 
         <Container id="label" size={1200} mb="8rem">
-            <Title mb="0.8rem" ta="center" order={2} fz="3rem">About us</Title>
+            <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">About us</Title>
             <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
                 adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia
                 rerum tempore voluptatibus.</Text>
@@ -200,7 +212,7 @@ export default function Page() {
         </Container>
 
         <Container id="releases" size={1800} mb="8rem">
-            <Title mb="0.8rem" ta="center" order={2} fz="3rem">Our releases</Title>
+            <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">Our releases</Title>
             <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
                 adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia
                 rerum tempore voluptatibus.</Text>

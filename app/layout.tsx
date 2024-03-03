@@ -1,4 +1,5 @@
 import "@mantine/core/styles.css";
+import '@mantine/carousel/styles.layer.css';
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 import { theme } from "../theme";
 import "./styles/App.css";
@@ -12,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <ColorSchemeScript defaultColorScheme="light" />
+        <ColorSchemeScript defaultColorScheme="dark" />
         <link rel="shortcut icon" href="/logo.png" />
         <meta
           name="viewport"
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <MantineProvider defaultColorScheme="light" theme={theme}>{children}</MantineProvider>
+        <MantineProvider defaultColorScheme="dark" theme={theme}>{children}</MantineProvider>
       </body>
     </html>
   );
