@@ -5,7 +5,30 @@
 }
 
 body {
-  background-image: url("/backgrounds.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  background: rgb(50,65,160);
+  background: linear-gradient(126deg, rgba(50,65,160,0.2) 0%, rgba(5,52,109,1) 100%);
+}
+
+.stat_box {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.align-left-on-sm {
+  text-align: right;
+
+  @media (max-width: 1024px) {
+    text-align: left;
+  }
 }

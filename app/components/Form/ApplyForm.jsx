@@ -7,6 +7,8 @@ export function ApplyForm() {
     const [statusMessage, setStatusMessage] = useState('');
     const form = useForm({
         initialValues: {
+            name: '',
+            email: '',
             topic: '', // can be 'artist', 'business', 'other'
             message: ''
         }

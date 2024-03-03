@@ -6,11 +6,13 @@ import {
     Burger,
     Container,
     Drawer,
+    Grid,
     Group,
     Image,
     Paper,
     SimpleGrid,
-    Stack, Stepper,
+    Stack,
+    Stepper,
     Text,
     Title
 } from "@mantine/core";
@@ -60,14 +62,52 @@ export default function Page() {
                 </Drawer>
             </Container>
         </Box>
-        <Stack align="center" gap="0.2rem" my="10rem">
-            <Image className="logo" src="/logo.png" alt="Logo" w="72" h="auto"/>
-            <Title mb="1rem" lh={1} fw={700} mx="auto" ta="center" size="4rem" maw="40rem">Elegent sounds, the best
-                artists</Title>
-            <Text ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-                consectetur illum ipsam nobis possimus ratione sapiente! Cupiditate in perspiciatis quis saepe sunt!
-                Amet blanditiis culpa nam quasi quo repellendus vero.</Text>
-        </Stack>
+        <Container size={1400}>
+            <Grid my="10rem">
+                <Grid.Col span={{base: 12, md: 6}}>
+                    <Stack gap="0.2rem">
+                        <Image className="logo" src="/logo.png" alt="Logo" w="72" h="auto"/>
+                        <Title mb="1rem" lh={1} fw={700} size="4rem" maw="40rem">Elegent sounds, the
+                            best
+                            artists</Title>
+                        <Text c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Commodi
+                            consectetur illum ipsam nobis possimus ratione sapiente! Cupiditate in perspiciatis quis saepe
+                            sunt!
+                            Amet blanditiis culpa nam quasi quo repellendus vero.</Text>
+                    </Stack>
+                </Grid.Col>
+                <Grid.Col pos="relative" span={{base: 12, md: 6}}>
+                    <Paper right="5rem" top={0} pos="absolute" className="stat_box" radius="50px" bg="rgba(255, 255, 255, 0.5)" w="fit-content" shadow="lg" p="2rem">
+                        <Group>
+                            <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
+                                <PiUserCircleBold size="1.8rem"/>
+                            </ActionIcon>
+                            <Text c="black" fw={700} size="2rem">4</Text>
+                            <Text c="dark.5">Total artists</Text>
+                        </Group>
+                    </Paper>
+                    <Paper top="10rem" left="2rem" pos="absolute" className="stat_box" radius="50px" bg="rgba(255, 255, 255, 0.5)" w="fit-content" shadow="lg" p="2rem">
+                        <Group>
+                            <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
+                                <PiUserCircleBold size="1.8rem"/>
+                            </ActionIcon>
+                            <Text c="black" fw={700} size="2rem">530,326</Text>
+                            <Text c="dark.5">Total minutes</Text>
+                        </Group>
+                    </Paper>
+                    <Paper bottom="-2rem" right="2rem" pos="absolute" className="stat_box" radius="50px" bg="rgba(255, 255, 255, 0.5)" w="fit-content" shadow="lg" p="2rem">
+                        <Group>
+                            <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
+                                <PiUserCircleBold size="1.8rem"/>
+                            </ActionIcon>
+                            <Text c="black" fw={700} size="2rem">7</Text>
+                            <Text c="dark.5">Total releases</Text>
+                        </Group>
+                    </Paper>
+                </Grid.Col>
+            </Grid>
+        </Container>
 
         <Container id="about" size={1200} mb="8rem">
             <Title mb="0.8rem" ta="center" order={2} fz="3rem">Supporting artists for over 5 years</Title>
@@ -100,13 +140,6 @@ export default function Page() {
                     <Text mb="1rem" c="dimmed">Total songs</Text>
                     <Text fw={700} size="2rem">93</Text>
                 </Paper>
-                <Paper shadow="lg" p="3rem" style={{borderTop: "20px solid #2A7FFE"}}>
-                    <ActionIcon mb="1rem" size="xl" bg="rgb(35,139,230, 0.5)">
-                        <PiTimerLight size="1.8rem"/>
-                    </ActionIcon>
-                    <Text mb="1rem" c="dimmed">Since</Text>
-                    <Text fw={700} size="2rem">2019</Text>
-                </Paper>
             </SimpleGrid>
         </Container>
 
@@ -137,19 +170,31 @@ export default function Page() {
             <Stepper active={active} onStepClick={setActive} iconPosition="right">
                 <Stepper.Step label="Step 1" description="Create an account">
                     <Text fw={700} my="1rem">Step 1</Text>
-                    <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur dolor, eligendi enim est eveniet explicabo facilis harum id laboriosam molestiae nesciunt quam quibusdam quod rem repudiandae sed sint. Debitis et illum ipsam itaque laboriosam nemo officia perferendis quasi saepe?</Text>
+                    <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur dolor, eligendi
+                        enim est eveniet explicabo facilis harum id laboriosam molestiae nesciunt quam quibusdam quod
+                        rem repudiandae sed sint. Debitis et illum ipsam itaque laboriosam nemo officia perferendis
+                        quasi saepe?</Text>
                 </Stepper.Step>
                 <Stepper.Step label="Step 2" description="Create an account">
                     <Text fw={700} my="1rem">Step 2</Text>
-                    <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur dolor, eligendi enim est eveniet explicabo facilis harum id laboriosam molestiae nesciunt quam quibusdam quod rem repudiandae sed sint. Debitis et illum ipsam itaque laboriosam nemo officia perferendis quasi saepe?</Text>
+                    <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur dolor, eligendi
+                        enim est eveniet explicabo facilis harum id laboriosam molestiae nesciunt quam quibusdam quod
+                        rem repudiandae sed sint. Debitis et illum ipsam itaque laboriosam nemo officia perferendis
+                        quasi saepe?</Text>
                 </Stepper.Step>
                 <Stepper.Step label="Step 3" description="Create an account">
                     <Text fw={700} my="1rem">Step 3</Text>
-                    <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur dolor, eligendi enim est eveniet explicabo facilis harum id laboriosam molestiae nesciunt quam quibusdam quod rem repudiandae sed sint. Debitis et illum ipsam itaque laboriosam nemo officia perferendis quasi saepe?</Text>
+                    <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur dolor, eligendi
+                        enim est eveniet explicabo facilis harum id laboriosam molestiae nesciunt quam quibusdam quod
+                        rem repudiandae sed sint. Debitis et illum ipsam itaque laboriosam nemo officia perferendis
+                        quasi saepe?</Text>
                 </Stepper.Step>
                 <Stepper.Step label="Step 4" description="Create an account">
                     <Text fw={700} my="1rem">Step 4</Text>
-                    <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur dolor, eligendi enim est eveniet explicabo facilis harum id laboriosam molestiae nesciunt quam quibusdam quod rem repudiandae sed sint. Debitis et illum ipsam itaque laboriosam nemo officia perferendis quasi saepe?</Text>
+                    <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur dolor, eligendi
+                        enim est eveniet explicabo facilis harum id laboriosam molestiae nesciunt quam quibusdam quod
+                        rem repudiandae sed sint. Debitis et illum ipsam itaque laboriosam nemo officia perferendis
+                        quasi saepe?</Text>
                 </Stepper.Step>
             </Stepper>
         </Container>
@@ -177,7 +222,7 @@ export default function Page() {
         </Container>
 
         <Container id="apply" mb="10rem">
-            <ApplyForm />
+            <ApplyForm/>
         </Container>
     </>
 }
