@@ -33,16 +33,15 @@ export default function Page() {
     return <>
         <Box bg="indigo.9" className={classes.header}>
             <Container py="0.8rem" size={1200} className={classes.inner}>
-                <Image className="logo" src="/logo.png" alt="Logo" w="42" h="auto"/>
+                <Link href="/">
+                    <Image className="logo" src="/logo.png" alt="Logo" w="42" h="auto"/>
+                </Link>
                 <Group gap="2rem" visibleFrom="sm">
-                    <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
-                        <Text c="bright" fw={700} component={Link} href="/#about">About us</Text>
-                    </Paper>
                     <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
                         <Text c="bright" fw={700} component={Link} href="/#artists">Artists</Text>
                     </Paper>
                     <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
-                        <Text c="bright" fw={700} component={Link} href="/#label">Label</Text>
+                        <Text c="bright" fw={700} component={Link} href="/#label">About us</Text>
                     </Paper>
                     <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
                         <Text c="bright" fw={700} component={Link} href="/#releases">Releases</Text>
@@ -64,9 +63,8 @@ export default function Page() {
                     title="Menu"
                 >
                     <Stack>
-                        <Text fw={700} size="1.1rem" component={Link} href="/#about">About us</Text>
                         <Text fw={700} size="1.1rem" component={Link} href="/#artists">Artists</Text>
-                        <Text fw={700} size="1.1rem" component={Link} href="/#label">Label</Text>
+                        <Text fw={700} size="1.1rem" component={Link} href="/#label">About us</Text>
                         <Text fw={700} size="1.1rem" component={Link} href="/#releases">Releases</Text>
                         <Text fw={700} size="1.1rem" component={Link} href="/#apply">Apply</Text>
                     </Stack>
@@ -162,8 +160,8 @@ export default function Page() {
             <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
                 adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia
                 rerum tempore voluptatibus.</Text>
-            <Container size="20rem">
-                <Carousel w="auto" withIndicators height={500}>
+            <Container size="80rem">
+                <Carousel slideSize="71rem" w="auto" withIndicators height={800}>
                     <Carousel.Slide><ArtistCard/></Carousel.Slide>
                     <Carousel.Slide><ArtistCard/></Carousel.Slide>
                     <Carousel.Slide><ArtistCard/></Carousel.Slide>

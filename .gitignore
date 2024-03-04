@@ -130,3 +130,12 @@ dist
 .pnp.*
 
 .DS_Store
+/.idea/.gitignore
+/.idea/cssdialects.xml
+/.idea/modules.xml
+/.idea/notesounds.iml
+/package-lock.json
+/.idea/inspectionProfiles/Project_Default.xml
+/tsconfig.json
+/.idea/vcs.xml
+/.idea/watcherTasks.xml

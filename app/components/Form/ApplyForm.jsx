@@ -1,4 +1,4 @@
-import {Button, Group, Select, Text, Textarea, Title} from '@mantine/core';
+import {Button, Group, Select, Text, Textarea, TextInput, Title} from '@mantine/core';
 import {useForm} from '@mantine/form';
 import axios from 'axios';
 import {useState} from "react";
@@ -34,6 +34,10 @@ export function ApplyForm() {
             adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia
             rerum tempore voluptatibus.</Text>
 
+            <Group wrap="nowrap" grow>
+                <TextInput mb="1rem" label="Name" placeholder="Your name" {...form.getInputProps('name')} required />
+                <TextInput mb="1rem" label="Email" type="email" placeholder="Your email" {...form.getInputProps('email')} required />
+            </Group>
         <Select mb="1rem" label="Topic" data={[{label: 'Artist', value: 'artist'}, {label: 'Business', value: 'business'}, {
             label: 'Other',
             value: 'other'

@@ -1,14 +1,13 @@
 import nodemailer from "nodemailer";
 import {NextResponse} from "next/server";
-import {NextApiRequest} from "next";
 
 export async function POST(req) {
     const body = await req.json()
-    const {topic, message} = body;
+    const {name, email, topic, message} = body;
 
     // Check if all the required fields are provided
-    if (!topic || !message) {
-        return NextResponse.json({ error: 'Please enter all fields!' }, { status: 500 })
+    if (!topic || !message || !name || !email) {
+        return NextResponse.json({error: 'Please enter all fields!'}, {status: 500})
     } else {
 
         // Assuming you want to keep a check for bots similar to the 'privacy' field
@@ -23,11 +22,13 @@ export async function POST(req) {
             from: "NoteSounds@hotmail.com",
             to: "NoteSounds@hotmail.com",
             subject: "New website enquiry",
-            html: `<p>Topic: ${topic}</p>
-                       <p>Message: ${message}</p>`
+            html: `<p>Name: ${name}</p>
+<p>Email: ${email}</p>
+<p>Topic: ${topic}</p>
+<p>Message: ${message}</p>`
         });
 
-        return NextResponse.json({ message: 'Email sent successfully!' }, { status: 200 })
+        return NextResponse.json({message: 'Email sent successfully!'}, {status: 200})
 
     }
 }
