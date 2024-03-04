@@ -1,4 +1,4 @@
-import {ActionIcon, Container, Group, Image, rem} from '@mantine/core';
+import {ActionIcon, Container, Group, Image, rem, Text} from '@mantine/core';
 import {
     IconBrandFacebook,
     IconBrandInstagram,
@@ -13,9 +13,12 @@ export function Footer() {
     return (
         <div className={classes.footer}>
             <Container className={classes.inner}>
-                <Link href="/">
-                    <Image className="logo" src="/logo.png" alt="Logo" w="42" h="auto"/>
-                </Link>
+                <Group>
+                    <Link href="/">
+                        <Image className="logo" src="/logo.png" alt="Logo" w="42" h="auto"/>
+                    </Link>
+                    <Text size="sm" c="dimmed">NOTESOUNDS INTERACTIVE LLC. ALL RIGHTS RESERVED</Text>
+                </Group>
                 <Group gap={0} className={classes.links} justify="flex-end" wrap="nowrap">
                     <ActionIcon component={Link} href="https://www.instagram.com/notesoundscom/" target="_blank"
                                 size="lg" color="gray" variant="subtle">
