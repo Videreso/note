@@ -13,6 +13,12 @@ body {
 
 .stat_box {
   animation: float 5s ease-in-out infinite;
+
+  @media (max-width: 1024px) {
+    margin-top: 1rem;
+    position: static !important;
+    animation: none;
+  }
 }
 
 @keyframes float {

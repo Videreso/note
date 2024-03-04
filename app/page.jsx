@@ -41,7 +41,7 @@ export default function Page() {
                         <Text c="bright" fw={700} component={Link} href="/#artists">Artists</Text>
                     </Paper>
                     <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
-                        <Text c="bright" fw={700} component={Link} href="/#label">About us</Text>
+                        <Text c="bright" fw={700} component={Link} href="/#label">Label</Text>
                     </Paper>
                     <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
                         <Text c="bright" fw={700} component={Link} href="/#releases">Releases</Text>
@@ -64,7 +64,7 @@ export default function Page() {
                 >
                     <Stack>
                         <Text fw={700} size="1.1rem" component={Link} href="/#artists">Artists</Text>
-                        <Text fw={700} size="1.1rem" component={Link} href="/#label">About us</Text>
+                        <Text fw={700} size="1.1rem" component={Link} href="/#label">Label</Text>
                         <Text fw={700} size="1.1rem" component={Link} href="/#releases">Releases</Text>
                         <Text fw={700} size="1.1rem" component={Link} href="/#apply">Apply</Text>
                     </Stack>
@@ -72,9 +72,9 @@ export default function Page() {
             </Container>
         </Box>
         <Container size={1400}>
-            <Grid my="10rem">
+            <Grid my="10%">
                 <Grid.Col span={{base: 12, md: 6}}>
-                    <Stack py="3rem" gap="0.2rem">
+                    <Stack py="2%" gap="0.2rem">
                         <Title c="bright" mb="1rem" lh={1} fw={700} size="4rem" maw="40rem">Elegent sounds, the
                             best
                             artists</Title>
