@@ -155,7 +155,7 @@ export default function Page() {
         {/*    </SimpleGrid>*/}
         {/*</Container>*/}
 
-        <Divider my="2rem" color="white" size="xl" />
+        <Divider my="2rem" color="blue" size="xl" />
 
         <Container id="artists" size={1200} mb="8rem">
             <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">Meet our talent</Title>
@@ -174,7 +174,7 @@ export default function Page() {
             </Container>
         </Container>
 
-        <Divider my="2rem" color="white" size="xl" />
+        <Divider my="2rem" color="blue" size="xl" />
 
         <Container id="label" size={1200} mb="8rem">
             <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">About us</Title>
@@ -213,7 +213,7 @@ export default function Page() {
             </Stepper>
         </Container>
 
-        <Divider my="2rem" color="white" size="xl" />
+        <Divider my="2rem" color="blue" size="xl" />
 
         <Container id="releases" size={1800} mb="8rem">
             <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">Our releases</Title>
@@ -237,7 +237,7 @@ export default function Page() {
             </SimpleGrid>
         </Container>
 
-        <Divider my="2rem" color="white" size="xl" />
+        <Divider my="2rem" color="blue" size="xl" />
 
         <Container id="apply" mb="10rem">
             <ApplyForm/>
