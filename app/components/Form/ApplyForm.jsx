@@ -29,7 +29,7 @@ export function ApplyForm() {
     }
 
     return (<div>
-        <Title mb="0.8rem" ta="center" order={2} fz="3rem">Apply for NoteSounds</Title>
+        <Title mb="0.8rem" ta="center" order={2} fz="3rem" c="white">Apply for NoteSounds</Title>
         <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia
             rerum tempore voluptatibus.</Text>

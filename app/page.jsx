@@ -4,7 +4,7 @@ import {
     ActionIcon,
     Box,
     Burger,
-    Container,
+    Container, Divider,
     Drawer,
     Grid,
     Group,
@@ -155,6 +155,8 @@ export default function Page() {
         {/*    </SimpleGrid>*/}
         {/*</Container>*/}
 
+        <Divider my="2rem" color="white" size="xl" />
+
         <Container id="artists" size={1200} mb="8rem">
             <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">Meet our talent</Title>
             <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
@@ -171,6 +173,8 @@ export default function Page() {
                 </Carousel>
             </Container>
         </Container>
+
+        <Divider my="2rem" color="white" size="xl" />
 
         <Container id="label" size={1200} mb="8rem">
             <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">About us</Title>
@@ -209,6 +213,8 @@ export default function Page() {
             </Stepper>
         </Container>
 
+        <Divider my="2rem" color="white" size="xl" />
+
         <Container id="releases" size={1800} mb="8rem">
             <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">Our releases</Title>
             <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
@@ -230,6 +236,8 @@ export default function Page() {
                 <ReleasesCard/>
             </SimpleGrid>
         </Container>
+
+        <Divider my="2rem" color="white" size="xl" />
 
         <Container id="apply" mb="10rem">
             <ApplyForm/>
