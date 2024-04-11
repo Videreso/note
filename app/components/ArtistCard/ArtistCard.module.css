@@ -6,13 +6,9 @@
     align-items: flex-start;
     background-size: cover;
     background-position: center;
-    background-image: url("https://media.istockphoto.com/id/502130741/photo/music-from-the-heart.jpg?s=612x612&w=0&k=20&c=owJIEesKJ_kpkWjH3CuLFhHGKz288ChVNXFguCHKrPk=");
 }
 
 .title {
-    font-family:
-            Greycliff CF,
-            var(--mantine-font-family);
     font-weight: 900;
     color: var(--mantine-color-white);
     line-height: 1.2;
