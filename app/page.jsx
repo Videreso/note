@@ -76,7 +76,7 @@ export default function Page() {
             <Grid my="10%">
                 <Grid.Col span={{base: 12, md: 6}}>
                     <Stack py="2%" gap="0.2rem">
-                        <Title fs="italic" c="bright" mb="1rem" lh={1} fw={700} fz={{base: "3rem", md: "5rem"}} maw="40rem">Notesounds</Title>
+                        <Title fs="italic" c="#a48cff" mb="1rem" lh={1} fw={700} fz={{base: "3rem", md: "5rem"}} maw="40rem">Notesounds</Title>
                         <Text c="dimmed" maw="40rem">
                             We are an entertainment company with a wide array of the most fascinating artists on Spotify.
                             Encompassing dozens of genres in order to guarantee satisfaction to all our fans around the world.</Text>
