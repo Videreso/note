@@ -192,7 +192,7 @@ export default function Page() {
                         backing of our production team is available to make sure your track sounds as perfect as
                         possible.</Text>
                 </Stepper.Step>
-                <Stepper.Step label="MarketingH">
+                <Stepper.Step label="Marketing">
                     <Text fw={700} my="1rem">Marketing</Text>
                     <Text>In this day and age, Marketing is the single most important thing for any aspiring musician.
                         That's why at Notesounds its our single most developed Department. Ranging from Dedicated NS
