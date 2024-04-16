@@ -76,15 +76,10 @@ export default function Page() {
             <Grid my="10%">
                 <Grid.Col span={{base: 12, md: 6}}>
                     <Stack py="2%" gap="0.2rem">
-                        <Title c="bright" mb="1rem" lh={1} fw={700} size="4rem" maw="40rem">Elegent sounds, the
-                            best
-                            artists</Title>
+                        <Title c="bright" mb="1rem" lh={1} fw={700} size="4rem" maw="40rem">Notesounds</Title>
                         <Text c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Commodi
-                            consectetur illum ipsam nobis possimus ratione sapiente! Cupiditate in perspiciatis quis
-                            saepe
-                            sunt!
-                            Amet blanditiis culpa nam quasi quo repellendus vero.</Text>
+                            We are an entertainment company with a wide array of the most fascinating artists on Spotify.
+                            Encompassing dozens of genres in order to guarantee satisfaction to all our fans around the world.</Text>
                     </Stack>
                 </Grid.Col>
                 <Grid.Col pos="relative" span={{base: 12, md: 6}}>
@@ -177,29 +172,27 @@ export default function Page() {
 
         <Container id="label" size={1200} mb="8rem">
             <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">Label</Title>
-            <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia
-                rerum tempore voluptatibus.</Text>
+            <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Notesounds differs from other Indie Music Labels thanks to our four exclusive programs we provide to those signed with us.</Text>
             <Stepper active={active} onStepClick={setActive} iconPosition="right">
-                <Stepper.Step label="Step 1">
+                <Stepper.Step label="Distribution">
                     <Text fw={700} my="1rem">Distribution</Text>
                     <Text>Distributing your releases with Notesounds is simple and works around your schedule. Whether
                         you want to release singles, or an album at whatever time or date we are ready. Thanks to our
                         Distribution Partners we promise a seamless experience.</Text>
                 </Stepper.Step>
-                <Stepper.Step label="Step 2">
+                <Stepper.Step label="Support">
                     <Text fw={700} my="1rem">Support</Text>
                     <Text>Here at Notesounds our number one priority is to make sure you as an Artist hit the goals you
                         made when you signed with us. No exceptions, that's why with our dedicated team we are available
                         and ready 24/7.</Text>
                 </Stepper.Step>
-                <Stepper.Step label="Step 3">
+                <Stepper.Step label="Production">
                     <Text fw={700} my="1rem">Production</Text>
                     <Text>Notesounds maintains an active team of sound mixers, writers, mastering and more. The full
                         backing of our production team is available to make sure your track sounds as perfect as
                         possible.</Text>
                 </Stepper.Step>
-                <Stepper.Step label="Step 4">
+                <Stepper.Step label="MarketingH">
                     <Text fw={700} my="1rem">Marketing</Text>
                     <Text>In this day and age, Marketing is the single most important thing for any aspiring musician.
                         That's why at Notesounds its our single most developed Department. Ranging from Dedicated NS
@@ -213,9 +206,7 @@ export default function Page() {
 
         <Container id="releases" size={1800} mb="8rem">
             <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">Our releases</Title>
-            <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Accusantium adipisci delectus distinctio earum expedita maxime necessitatibus officia
-                rerum tempore voluptatibus.</Text>
+            <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">The latest releases from Official Notesounds Artists are here! Listen to the hottest tracks on Lofi, Chill-Out, and EDM.</Text>
             <SimpleGrid
                 cols={{base: 1, sm: 2, lg: 3}}
                 spacing={{base: 10, sm: 'xl'}}

@@ -31,7 +31,7 @@ export function ApplyForm() {
     return (<div>
             <Title mb="0.8rem" ta="center" order={2} fz="3rem" c="white">Apply for NoteSounds</Title>
             <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Interested in becoming an Artist with
-                Notesounds? Send us a message below to our A&R Team. Business partnerships or any legal matter below
+                Notesounds? Send us a message below to our A&R. Business partnerships or any legal matter below
                 as well.</Text>
 
             <Group wrap="nowrap" grow>
