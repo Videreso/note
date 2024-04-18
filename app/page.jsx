@@ -20,7 +20,8 @@ import {
 import {useDisclosure} from "@mantine/hooks";
 import Link from "next/link";
 import classes from './styles/Header.module.css';
-import {PiUserCircleBold, TbMusic, TbAlbum} from "react-icons/pi";
+import {PiUserCircleBold} from "react-icons/pi";
+import {TbMusic, TbAlbum} from "react-icons/tb";
 import {ArtistCard} from "./components/ArtistCard/ArtistCard";
 import {useState} from "react";
 import {ReleasesCard} from "./components/ReleasesCard/ReleasesCard";
