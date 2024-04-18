@@ -20,7 +20,7 @@ import {
 import {useDisclosure} from "@mantine/hooks";
 import Link from "next/link";
 import classes from './styles/Header.module.css';
-import {PiUserCircleBold} from "react-icons/pi";
+import {PiUserCircleBold, TbMusic, TbAlbum} from "react-icons/pi";
 import {ArtistCard} from "./components/ArtistCard/ArtistCard";
 import {useState} from "react";
 import {ReleasesCard} from "./components/ReleasesCard/ReleasesCard";
@@ -97,7 +97,7 @@ export default function Page() {
                            bg="rgba(255, 255, 255, 0.5)" w="fit-content" shadow="lg" p="2rem">
                         <Group>
                             <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
-                                <PiUserCircleBold size="1.8rem"/>
+                                <TbMusic size="1.8rem"/>
                             </ActionIcon>
                             <Text c="black" fw={700} size="2rem">500,000+</Text>
                             <Text c="dark.5">Streams</Text>
@@ -107,7 +107,7 @@ export default function Page() {
                            bg="rgba(255, 255, 255, 0.5)" w="fit-content" shadow="lg" p="2rem">
                         <Group>
                             <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
-                                <PiUserCircleBold size="1.8rem"/>
+                                <TbAlbum size="1.8rem"/>
                             </ActionIcon>
                             <Text c="black" fw={700} size="2rem">30+</Text>
                             <Text c="dark.5">Total releases</Text>
