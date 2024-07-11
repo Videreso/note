@@ -76,10 +76,13 @@ export default function Page() {
             <Grid my="10%">
                 <Grid.Col span={{base: 12, md: 6}}>
                     <Stack py="2%" gap="0.2rem">
-                        <Title fs="italic" c="bright" mb="1rem" lh={1} fw={700} fz={{base: "3rem", md: "5rem"}} maw="40rem">Notesounds</Title>
+                        <Title fs="italic" c="bright" mb="1rem" lh={1} fw={700} fz={{base: "3rem", md: "5rem"}}
+                               maw="40rem">Notesounds</Title>
                         <Text c="dimmed" maw="40rem">
-                            We are an entertainment company with a wide array of the most fascinating artists on Spotify.
-                            Encompassing dozens of genres in order to guarantee satisfaction to all our fans around the world.</Text>
+                            We are an entertainment company with a wide array of the most fascinating artists on
+                            Spotify.
+                            Encompassing dozens of genres in order to guarantee satisfaction to all our fans around the
+                            world.</Text>
                     </Stack>
                 </Grid.Col>
                 <Grid.Col pos="relative" span={{base: 12, md: 6}}>
@@ -172,7 +175,8 @@ export default function Page() {
 
         <Container id="label" size={1200} mb="8rem">
             <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">Label</Title>
-            <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Notesounds differs from other Indie Music Labels thanks to our four exclusive programs we provide to those signed with us.</Text>
+            <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">Notesounds differs from other Indie Music
+                Labels thanks to our four exclusive programs we provide to those signed with us.</Text>
             <Stepper active={active} onStepClick={setActive} iconPosition="right">
                 <Stepper.Step label="Distribution">
                     <Text fw={700} my="1rem">Distribution</Text>
@@ -206,30 +210,31 @@ export default function Page() {
 
         <Container id="releases" size={1800} mb="8rem">
             <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">Our releases</Title>
-            <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">The latest releases from Official Notesounds Artists are here! Listen to the hottest tracks on Lofi, Chill-Out, and EDM.</Text>
+            <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">The latest releases from Official Notesounds
+                Artists are here! Listen to the hottest tracks on Lofi, Chill-Out, and EDM.</Text>
             <SimpleGrid
                 cols={{base: 1, sm: 2, lg: 3}}
                 spacing={{base: 10, sm: 'xl'}}
                 verticalSpacing={{base: 'md', sm: 'xl'}}
             >
                 <ReleasesCard title="Red Flash" streams={4000} released="March 15" artist="Alexander Gust"
-                              image="https://media.discordapp.net/attachments/1211409762604945428/1225188808715407402/image.png?ex=6629737e&is=6616fe7e&hm=ab6c361db9368464add13fc6f38b225bd2915445970ab1bdafc2a521bc39b1e7&=&format=webp&quality=lossless&width=663&height=671"/>
+                              image="/alexander_gust.png"/>
                 <ReleasesCard title="open" streams={5000} released="March 8" artist="Osteryze"
-                              image="https://cdn.discordapp.com/attachments/1211409762604945428/1225188809105215669/image.png?ex=6629737e&is=6616fe7e&hm=63b2a75f10e951f3cf33896aaf09ee7f8b5adf78d8392ba6c0e1743858490a10&"/>
+                              image="/3.jpg"/>
                 <ReleasesCard title="stuck in maybe" streams={10000} released="March 3" artist="w8bless"
-                              image="https://cdn.discordapp.com/attachments/1211409762604945428/1225188809441021972/image.png?ex=6629737f&is=6616fe7f&hm=ed2ded074c37fb32223d63c974c04dce4b5bffc8a04c0c1979fe1d058381f7e7&"/>
+                              image="/e.jpg"/>
                 <ReleasesCard title="BELT" streams={2000} released="March 2" artist="Joel Miller May"
-                              image="https://cdn.discordapp.com/attachments/1211409762604945428/1225188809767915641/image.png?ex=6629737f&is=6616fe7f&hm=5526c478f15a1e177d05dada457df3f6af36d5189a81e7ac46e2f669d374aa3d&"/>
+                              image="/belt.jpg"/>
                 <ReleasesCard title="Red Curtain" streams={4000} released="February 25" artist="Osteryze"
-                              image="https://cdn.discordapp.com/attachments/1211409762604945428/1225188810141466738/image.png?ex=6629737f&is=6616fe7f&hm=28091ddfbfd7d4339b787aac4cf635f768f80320d2b5287b075f7513896a4530&"/>
+                              image="/5.jpg"/>
                 <ReleasesCard title="Protect" streams={7000} released="February 23" artist="Alexander Gust"
-                              image="https://cdn.discordapp.com/attachments/1211409762604945428/1225188810527346698/image.png?ex=6629737f&is=6616fe7f&hm=b0e04cfd6abb094cc7ca96a23c838e27c2d712b7364df44bf9278d15b2a76951&"/>
+                              image="/protect.jpg"/>
                 <ReleasesCard title="Memories" streams={8000} released="February 20" artist="w8bless"
-                              image="https://cdn.discordapp.com/attachments/1211409762604945428/1225188810875211927/image.png?ex=6629737f&is=6616fe7f&hm=b11241753b787d53ef0206f3941849bd7cd76f28b0693c31bae949c649f47d09&"/>
+                              image="/4.jpg"/>
                 <ReleasesCard title="I see" streams={10000} released="February 17" artist="Alexander Gust"
-                              image="https://cdn.discordapp.com/attachments/1211409762604945428/1225188811521396746/image.png?ex=6629737f&is=6616fe7f&hm=afb4f5ed488855b049a7ff733df0f6f376415f61ccb8859c20f1bec9b668edb2&"/>
+                              image="/eye.jpg"/>
                 <ReleasesCard title="One Life" streams={10000} released="February 15" artist="Joel Miller May"
-                              image="https://cdn.discordapp.com/attachments/1211409762604945428/1225188812003737650/image.png?ex=6629737f&is=6616fe7f&hm=c9a5060e9266c2ac76b8215d7fafd75773134a2655c11056afae5a0ceb0fa3f9&"/>
+                              image="/onelife.jpg"/>
             </SimpleGrid>
         </Container>
 
