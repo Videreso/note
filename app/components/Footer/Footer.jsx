@@ -17,7 +17,7 @@ export function Footer() {
                     <Link href="/">
                         <Image className="logo" src="/logo.png" alt="Logo" w="42" h="auto"/>
                     </Link>
-                    <Text size="sm" c="dimmed">NOTESOUNDS INTERACTIVE LLC. ALL RIGHTS RESERVED</Text>
+                    <Text size="sm" c="dimmed">©2024 NOTESOUNDS ALL RIGHTS RESERVED</Text>
                 </Group>
                 <Group gap={0} className={classes.links} justify="flex-end" wrap="nowrap">
                     <ActionIcon component={Link} href="https://www.instagram.com/notesoundscom/" target="_blank"
