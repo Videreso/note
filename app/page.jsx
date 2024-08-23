@@ -102,7 +102,7 @@ export default function Page() {
                             <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
                                 <PiUserCircleBold size="1.8rem"/>
                             </ActionIcon>
-                            <Text c="black" fw={700} size="2rem">500,000+</Text>
+                            <Text c="black" fw={700} size="2rem">1,500,000+</Text>
                             <Text c="dark.5">Streams</Text>
                         </Group>
                     </Paper>
