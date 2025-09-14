@@ -1,0 +1,45 @@
+.logo {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+
+body {
+  background-image: url(/img_1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.stat_box {
+  animation: float 5s ease-in-out infinite;
+}
+@media (max-width: 1024px) {
+  .stat_box {
+    margin-top: 1rem;
+    position: static !important;
+    animation: none;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.align-left-on-sm {
+  text-align: right;
+}
+@media (max-width: 1024px) {
+  .align-left-on-sm {
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */
