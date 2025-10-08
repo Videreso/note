@@ -9,6 +9,10 @@
     transition: transform 0.5s ease;
 }
 
+.text {
+    color: #00008B;
+}
+
 .card:hover {
     transform: translateY(-10px);
 }
@@ -18,7 +22,7 @@
             Greycliff CF,
             var(--mantine-font-family);
     font-weight: 900;
-    color: var(--mantine-color-white);
+    color: #00008B;
     line-height: 1.2;
     font-size: rem(32px);
     margin-top: var(--mantine-spacing-xs);
@@ -27,4 +31,5 @@
 .category {
     font-weight: 700;
     text-transform: uppercase;
+    color: #00008B;
 }

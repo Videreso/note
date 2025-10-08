@@ -24,7 +24,7 @@ export function Footer() {
             />
           </Link>
           <Text size="sm" c="dimmed">
-            ©2024 NOTESOUNDS ALL RIGHTS RESERVED
+            ©2022-2025 NOTESOUNDS ALL RIGHTS RESERVED
           </Text>
         </Group>
         <Group
@@ -46,6 +46,19 @@ export function Footer() {
               stroke={1.5}
             />
           </ActionIcon>
+            <ActionIcon
+              component={Link}
+              href="https://open.spotify.com/user/31uhvysli4y2z2xlncgtyuo4vxkm"
+              target="_blank"
+              size="lg"
+              color="gray"
+              variant="subtle"
+            >
+              <IconBrandSpotify
+                style={{ width: rem(18), height: rem(18) }}
+                stroke={1.5}
+              />
+            </ActionIcon>
           {/*// now for youtube, soundcloud, facebook and spotify*/}
           <ActionIcon
             component={Link}

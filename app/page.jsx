@@ -45,26 +45,20 @@ export default function Page() {
             />
           </Link>
           <Group gap="2rem" visibleFrom="sm">
-            <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
-              <Text c="bright" fw={700} component={Link} href="/#artists">
+            <Group gap="1.2rem">
+              <Link href="/#artists" className={classes.linkButton}>
                 Artists
-              </Text>
-            </Paper>
-            <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
-              <Text c="bright" fw={700} component={Link} href="/#label">
+              </Link>
+              <Link href="/#label" className={classes.linkButton}>
                 Label
-              </Text>
-            </Paper>
-            <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
-              <Text c="bright" fw={700} component={Link} href="/#releases">
+              </Link>
+              <Link href="/#releases" className={classes.linkButton}>
                 Releases
-              </Text>
-            </Paper>
-            <Paper bg="indigo.3" p="0.5rem 1rem" radius="20px">
-              <Text c="bright" fw={700} component={Link} href="/#apply">
+              </Link>
+              <Link href="/#apply" className={classes.linkButton}>
                 Apply
-              </Text>
-            </Paper>
+              </Link>
+            </Group>
           </Group>
           <div />
 
@@ -238,16 +232,30 @@ export default function Page() {
           Nightcore scene.
         </Text>
         <Container size="60rem">
-          <Carousel slideSize="60rem" w="auto" withIndicators height={800}>
+          <Carousel
+            slideSize="60rem"
+            w="auto"
+            withIndicators
+            height={800}
+            styles={{
+              control: {
+                color: '#00008B',
+                borderColor: '#00008B',
+                fontSize: '4rem',
+                minWidth: '5rem',
+                minHeight: '5rem',
+              },
+            }}
+          >
             <Carousel.Slide>
               <ArtistCard image="/sDPvYvK.png" title="ROCK EMO NIGHTCORE" />
             </Carousel.Slide>
             <Carousel.Slide>
               <ArtistCard image="/sj1ezZX_d.webp" title="MEEX000" />
             </Carousel.Slide>
-            <Carousel.Slide>
-              <ArtistCard image="/Wht7beL_d.webp" title="RAINHOE" />
-            </Carousel.Slide>
+              <Carousel.Slide>
+                <ArtistCard image="/R37rskF_d.webp" title="TOMA" />
+              </Carousel.Slide>
             <Carousel.Slide>
               <ArtistCard image="/NrnDVK4_d.webp" title="NIGHTCORE ICHIBAN" />
             </Carousel.Slide>
@@ -343,7 +351,7 @@ export default function Page() {
             image="/sDPvYvK.png"
           />
           <ReleasesCard
-            title="Burn Me Clean"
+            title="Burn Me Clean [NEW]"
             streams={10000}
             released="March 3"
             artist="JAWABLIZ"

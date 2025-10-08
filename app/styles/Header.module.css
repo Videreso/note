@@ -1,3 +1,30 @@
+/* Carousel arrow custom color for Meet our talent section */
+.mantine-Carousel-controls .mantine-Carousel-control {
+    color: #00008B !important;
+    border-color: #00008B !important;
+}
+/* Modern nav button styles */
+.linkButton {
+    display: inline-block;
+    padding: 0.6rem 1.6rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+    background: linear-gradient(90deg, #00008B 0%, #2A7FFE 100%);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+.linkButton:hover {
+    background: linear-gradient(90deg, #2A7FFE 0%, #00008B 100%);
+    color: #e6e6fa;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transform: translateY(-1px) scale(1.01);
+}
 .header {
     margin-bottom: rem(120px);
 }
@@ -6,6 +33,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 .link {
@@ -18,9 +48,14 @@
     font-size: var(--mantine-font-size-sm);
     font-weight: 500;
 
-    @mixin hover {
-        background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
-    }
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.link:hover {
+    background-color: #e6e6fa;
+    color: #00008B;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 
     [data-mantine-color-scheme] &[data-active] {
         background-color: var(--mantine-color-blue-filled);
