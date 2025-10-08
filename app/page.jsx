@@ -26,6 +26,7 @@ import { useState } from "react";
 import { ReleasesCard } from "./components/ReleasesCard/ReleasesCard";
 import { ApplyForm } from "./components/Form/ApplyForm";
 import { Carousel } from "@mantine/carousel";
+import { PlaylistsSection } from "./components/PlaylistsSection";
 
 export default function Page() {
   const [opened, { toggle }] = useDisclosure(false);
@@ -401,6 +402,8 @@ export default function Page() {
           />
         </SimpleGrid>
       </Container>
+
+      <PlaylistsSection />
 
       <Divider my="2rem" color="blue" size="xl" />
 
