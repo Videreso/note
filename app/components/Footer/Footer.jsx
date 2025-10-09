@@ -16,24 +16,18 @@ export function Footer() {
         <Group>
           <Link href="/">
             <Image
-              className="logo"
+              className={classes.logo}
               src="/logo.png"
               alt="Logo"
-              w="42"
-              h="auto"
             />
           </Link>
-          <Text size="sm" c="dimmed">
+          <Text className={classes.copyright}>
             ©2022-2025 NOTESOUNDS ALL RIGHTS RESERVED
           </Text>
         </Group>
-        <Group
-          gap={0}
-          className={classes.links}
-          justify="flex-end"
-          wrap="nowrap"
-        >
+        <Group className={classes.links} justify="flex-end" wrap="nowrap">
           <ActionIcon
+            className={classes.icon}
             component={Link}
             href="https://www.instagram.com/notesoundscom/"
             target="_blank"
@@ -41,26 +35,21 @@ export function Footer() {
             color="gray"
             variant="subtle"
           >
-            <IconBrandInstagram
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
+            <IconBrandInstagram style={{ width: rem(22), height: rem(22) }} stroke={1.5} />
           </ActionIcon>
-            <ActionIcon
-              component={Link}
-              href="https://open.spotify.com/user/31uhvysli4y2z2xlncgtyuo4vxkm"
-              target="_blank"
-              size="lg"
-              color="gray"
-              variant="subtle"
-            >
-              <IconBrandSpotify
-                style={{ width: rem(18), height: rem(18) }}
-                stroke={1.5}
-              />
-            </ActionIcon>
-          {/*// now for youtube, soundcloud, facebook and spotify*/}
           <ActionIcon
+            className={classes.icon}
+            component={Link}
+            href="https://open.spotify.com/user/31uhvysli4y2z2xlncgtyuo4vxkm"
+            target="_blank"
+            size="lg"
+            color="gray"
+            variant="subtle"
+          >
+            <IconBrandSpotify style={{ width: rem(22), height: rem(22) }} stroke={1.5} />
+          </ActionIcon>
+          <ActionIcon
+            className={classes.icon}
             component={Link}
             href="https://www.youtube.com/@note-sounds"
             target="_blank"
@@ -68,12 +57,10 @@ export function Footer() {
             color="gray"
             variant="subtle"
           >
-            <IconBrandYoutube
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
+            <IconBrandYoutube style={{ width: rem(22), height: rem(22) }} stroke={1.5} />
           </ActionIcon>
           <ActionIcon
+            className={classes.icon}
             component={Link}
             href="https://www.facebook.com/profile.php?id=100089781420464"
             target="_blank"
@@ -81,10 +68,7 @@ export function Footer() {
             color="gray"
             variant="subtle"
           >
-            <IconBrandFacebook
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
+            <IconBrandFacebook style={{ width: rem(22), height: rem(22) }} stroke={1.5} />
           </ActionIcon>
         </Group>
       </Container>

@@ -120,69 +120,62 @@ export default function Page() {
             </Stack>
           </Grid.Col>
           <Grid.Col pos="relative" span={{ base: 12, md: 6 }}>
-            <Paper
-              right="5rem"
-              top={0}
-              pos="absolute"
-              className="stat_box"
-              radius="50px"
-              bg="rgba(255, 255, 255, 0.5)"
-              w="fit-content"
-              shadow="lg"
-              p="2rem"
-            >
-              <Group>
-                <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
-                  <PiUserCircleBold size="1.8rem" />
-                </ActionIcon>
-                <Text c="black" fw={700} size="2rem">
-                  30+
-                </Text>
-                <Text c="dark.5">Signed Artists</Text>
-              </Group>
-            </Paper>
-            <Paper
-              top="10rem"
-              left="1rem"
-              pos="absolute"
-              className="stat_box"
-              radius="50px"
-              bg="rgba(255, 255, 255, 0.5)"
-              w="fit-content"
-              shadow="lg"
-              p="2rem"
-            >
-              <Group>
-                <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
-                  <PiUserCircleBold size="1.8rem" />
-                </ActionIcon>
-                <Text c="black" fw={700} size="2rem">
-                  1,500,000+
-                </Text>
-                <Text c="dark.5">Streams</Text>
-              </Group>
-            </Paper>
-            <Paper
-              bottom="-2rem"
-              right="2rem"
-              pos="absolute"
-              className="stat_box"
-              radius="50px"
-              bg="rgba(255, 255, 255, 0.5)"
-              w="fit-content"
-              shadow="lg"
-              p="2rem"
-            >
-              <Group>
-                <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
-                  <PiUserCircleBold size="1.8rem" />
-                </ActionIcon>
-                <Text c="black" fw={700} size="2rem">
-                  200+
-                </Text>
-                <Text c="dark.5">Total releases</Text>
-              </Group>
-            </Paper>
+            <Group justify="center" gap="xl" mt="md">
+              <Paper
+                className="stat_box"
+                radius="50px"
+                bg="rgba(255, 255, 255, 0.5)"
+                w="fit-content"
+                shadow="lg"
+                p="2rem"
+              >
+                <Group>
+                  <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
+                    <PiUserCircleBold size="1.8rem" />
+                  </ActionIcon>
+                  <Text c="black" fw={700} size="2rem">
+                    65+
+                  </Text>
+                  <Text c="dark.5">Signed Artists</Text>
+                </Group>
+              </Paper>
+              <Paper
+                className="stat_box"
+                radius="50px"
+                bg="rgba(255, 255, 255, 0.5)"
+                w="fit-content"
+                shadow="lg"
+                p="2rem"
+              >
+                <Group>
+                  <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
+                    <PiUserCircleBold size="1.8rem" />
+                  </ActionIcon>
+                  <Text c="black" fw={700} size="2rem">
+                    4,500,000+
+                  </Text>
+                  <Text c="dark.5">Streams</Text>
+                </Group>
+              </Paper>
+              <Paper
+                className="stat_box"
+                radius="50px"
+                bg="rgba(255, 255, 255, 0.5)"
+                w="fit-content"
+                shadow="lg"
+                p="2rem"
+              >
+                <Group>
+                  <ActionIcon size="xl" bg="rgb(35,139,230, 0.5)">
+                    <PiUserCircleBold size="1.8rem" />
+                  </ActionIcon>
+                  <Text c="black" fw={700} size="2rem">
+                    700+
+                  </Text>
+                  <Text c="dark.5">Total releases</Text>
+                </Group>
+              </Paper>
+            </Group>
           </Grid.Col>
         </Grid>
       </Container>
@@ -266,60 +259,63 @@ export default function Page() {
 
       <Divider my="2rem" color="blue" size="xl" />
 
-      <Container id="label" size={1200} mb="8rem">
-        <Title c="bright" mb="0.8rem" ta="center" order={2} fz="3rem">
-          Label
-        </Title>
-        <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">
-          Notesounds differs from other Indie Music Labels thanks to our four
-          exclusive programs we provide to those signed with us.
-        </Text>
-        <Stepper active={active} onStepClick={setActive} iconPosition="right">
-          <Stepper.Step label="Distribution">
-            <Text fw={700} my="1rem">
-              Distribution
-            </Text>
-            <Text>
-              Distributing your releases with Notesounds is simple and works
-              around your schedule. Whether you want to release singles, or an
-              album at whatever time or date we are ready. Thanks to our
-              Distribution Partners we promise a seamless experience.
-            </Text>
-          </Stepper.Step>
-          <Stepper.Step label="Support">
-            <Text fw={700} my="1rem">
-              Support
-            </Text>
-            <Text>
-              Here at Notesounds our number one priority is to make sure you as
-              an Artist hit the goals you made when you signed with us. No
-              exceptions, that's why with our dedicated team we are available
-              and ready 24/7.
-            </Text>
-          </Stepper.Step>
-          <Stepper.Step label="Production">
-            <Text fw={700} my="1rem">
-              Production
-            </Text>
-            <Text>
-              Notesounds maintains an active team of sound mixers, writers,
-              mastering and more. The full backing of our production team is
-              available to make sure your track sounds as perfect as possible.
-            </Text>
-          </Stepper.Step>
-          <Stepper.Step label="Marketing">
-            <Text fw={700} my="1rem">
-              Marketing
-            </Text>
-            <Text>
-              In this day and age, Marketing is the single most important thing
-              for any aspiring musician. That's why at Notesounds its our single
-              most developed Department. Ranging from Dedicated NS Playlists,
-              Veteran Facebook AD Managers, Influencer Partnerships, and much
-              more of top industry strategies.
-            </Text>
-          </Stepper.Step>
-        </Stepper>
+  <Container id="label" size={1200} mt="4rem" mb="4rem">
+        <Paper
+          shadow="xl"
+          radius={32}
+          p="3.5rem"
+          style={{
+            background: 'linear-gradient(135deg, #f4f8ff 0%, #e0e7ff 100%)',
+            border: '2px solid #00008B',
+            boxShadow: '0 8px 32px rgba(0,0,139,0.10)',
+            margin: '0 auto',
+            maxWidth: 1100,
+          }}
+        >
+          <Title c="#00008B" mb="0.8rem" ta="center" order={2} fz="3rem">
+            Label
+          </Title>
+          <Text mb="2rem" mx="auto" ta="center" c="dimmed" maw="40rem">
+            Notesounds differs from other Indie Music Labels thanks to our four exclusive programs we provide to those signed with us.
+          </Text>
+          <Stepper
+            active={active}
+            onStepClick={setActive}
+            iconPosition="right"
+            styles={{
+              root: { background: 'transparent' },
+              stepIcon: { background: '#00008B', color: '#fff', borderColor: '#2A7FFE' },
+              stepBody: { background: 'transparent' },
+              stepLabel: { color: '#00008B', fontWeight: 700 },
+              stepDescription: { color: '#222' },
+            }}
+          >
+            <Stepper.Step label="Distribution">
+              <Text fw={700} my="1rem" c="#00008B">Distribution</Text>
+              <Text c="dark.5">
+                Distributing your releases with Notesounds is simple and works around your schedule. Whether you want to release singles, or an album at whatever time or date we are ready. Thanks to our Distribution Partners we promise a seamless experience.
+              </Text>
+            </Stepper.Step>
+            <Stepper.Step label="Support">
+              <Text fw={700} my="1rem" c="#00008B">Support</Text>
+              <Text c="dark.5">
+                Here at Notesounds our number one priority is to make sure you as an Artist hit the goals you made when you signed with us. No exceptions, that's why with our dedicated team we are available and ready 24/7.
+              </Text>
+            </Stepper.Step>
+            <Stepper.Step label="Production">
+              <Text fw={700} my="1rem" c="#00008B">Production</Text>
+              <Text c="dark.5">
+                Notesounds maintains an active team of sound mixers, writers, mastering and more. The full backing of our production team is available to make sure your track sounds as perfect as possible.
+              </Text>
+            </Stepper.Step>
+            <Stepper.Step label="Marketing">
+              <Text fw={700} my="1rem" c="#00008B">Marketing</Text>
+              <Text c="dark.5">
+                In this day and age, Marketing is the single most important thing for any aspiring musician. That's why at Notesounds its our single most developed Department. Ranging from Dedicated NS Playlists, Veteran Facebook AD Managers, Influencer Partnerships, and much more of top industry strategies.
+              </Text>
+            </Stepper.Step>
+          </Stepper>
+        </Paper>
       </Container>
 
       <Divider my="2rem" color="blue" size="xl" />
@@ -407,7 +403,7 @@ export default function Page() {
 
       <Divider my="2rem" color="blue" size="xl" />
 
-      <Container id="apply" mb="10rem">
+      <Container id="apply" size={1400} mt="4rem" mb="4rem">
         <ApplyForm />
       </Container>
     </>
