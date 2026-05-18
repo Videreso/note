@@ -4,17 +4,17 @@ import { IconBrandSpotify } from "@tabler/icons-react";
 const playlists = [
   {
     title: "🎵NIGHTCORE👾EDM🔋",
-    url: "https://open.spotify.com/playlist/1ZiM2G8AK8VSWB3bClNWDk",
+    url: "https://open.spotify.com/playlist/1ZiM2G8AK8VSWB3bClNWDqk",
     description: "The best of Nightcore tracks curated for you."
   },
   {
     title: "LATEST NIGHTCORE 24/7 🔥",
-    url: "https://open.spotify.com/playlist/2YvP1BU5vt401QhAEFewEF",
+    url: "https://open.spotify.com/playlist/2YvP1BU5vt401QhAEFeqwEF",
     description: "High energy EDM playlist for your party moments."
   },
   {
     title: "MOTIVATION|RAGE|FOCUS",
-    url: "https://open.spotify.com/playlist/06YAmXkG2aKCZfO3gQcBWn",
+    url: "https://open.spotify.com/playlist/06YAmXkG2aKCZfqO3gQcBWn",
     description: "Handpicked tracks by the Notesounds team."
   }
 ];
