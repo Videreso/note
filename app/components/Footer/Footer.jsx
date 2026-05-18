@@ -22,7 +22,7 @@ export function Footer() {
             />
           </Link>
           <Text className={classes.copyright}>
-            ©2022-2025 NOTESOUNDS ALL RIGHTS RESERVED
+            ©2022-2026 NOTESOUNDS ALL RIGHTS RESERVED
           </Text>
         </Group>
         <Group className={classes.links} justify="flex-end" wrap="nowrap">
