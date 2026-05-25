@@ -40,7 +40,7 @@ export function Footer() {
           <ActionIcon
             className={classes.icon}
             component={Link}
-            href="https://open.spotify.com/user/31uhvysli4y2z2xlncgtyuo4vxkm"
+            href="https://open.spotify.com/user/31uhvysli4y2z2xlncgt1yuo4vxkm"
             target="_blank"
             size="lg"
             color="gray"
