@@ -29,7 +29,7 @@ export function Footer() {
           <ActionIcon
             className={classes.icon}
             component={Link}
-            href="https://www.instagram.com/notesoundscom/"
+            href="https://www.instagram.com/notesoundss/"
             target="_blank"
             size="lg"
             color="gray"
